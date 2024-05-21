@@ -10,7 +10,7 @@ import Pricing from "@/app/components/Pricing";
 
 export default function Home() {
   return (
-      <div style={{position: 'relative'}}>
+      <div style={{position: 'relative', overflow: 'hidden'}}>
          <BackgroundSparkles/>
          <Header/>
           <Product/>
