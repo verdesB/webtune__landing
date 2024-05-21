@@ -42,7 +42,7 @@ const Assistant = () => {
             <h2 className="assistant__title">
                 Un assistant polyvalent
             </h2>
-            <p className="assistant__subTitle">toujours la pour t'aider</p>
+            <p className="assistant__subTitle">toujours la pour t&apos;aider</p>
             <div className="assistant__containerCards">
                 <div className="assistant__cardLeft">
                     <div className="assistant__cardBoxImg">
@@ -66,7 +66,7 @@ const Assistant = () => {
 
                 </div>
                 <div className="assistant__cardRight">
-                    <Image className="assistant__cardRightImg" src={gpt} />
+                    <Image className="assistant__cardRightImg" src={gpt} alt="gpt4" />
                 </div>
             </div>
             {/*<GridBackgroundDemo />*/}

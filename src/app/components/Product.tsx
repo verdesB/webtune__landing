@@ -23,6 +23,7 @@ const Product = () => (
             <Image
                 className="product__capture"
                 src={capture1}
+                alt='capture'
             />
         </div>
     </section>
