@@ -5,7 +5,7 @@ import type { Container, SingleOrMultiple } from '@tsparticles/engine';
 import { loadSlim } from '@tsparticles/slim';
 import { motion, useAnimation } from 'framer-motion';
 import { cn } from '../../utils/cn';
-
+// @ts-ignore
 type ParticlesProps = {
     id?: string,
     className?: string,
