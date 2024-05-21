@@ -2,6 +2,7 @@ import check from '/public/check.png';
 import { Button } from './ui/Button';
 import './styles/Pricing.scss';
 import Image from "next/image";
+import {any} from "prop-types";
 
 const Pricing = () => {
     console.log();
@@ -42,7 +43,7 @@ const Pricing = () => {
                     <div key={price.id} className="pricing__card">
                         {price.text}
                         <ul className="pricing__cardList">
-                            {Array(price.checks).fill().map((_, i) => (
+                            {Array(price.checks).fill(any).map((_, i) => (
                                 <li key={i}><Image className="pricing__cardCheck" src={check} alt={''}/></li>
                             ))}
                         </ul>
