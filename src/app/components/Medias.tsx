@@ -34,7 +34,7 @@ const Medias = () => {
             </div>
             <div className="medias__cardBox">
                 {cards.map((card) => (
-                    <div className="medias__card">
+                    <div key={card.id} className="medias__card">
                         {card.icon}
                         {card.text}
                     </div>

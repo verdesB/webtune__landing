@@ -8,12 +8,12 @@ const Assistant = () => {
     const Ia = {
         icon: <Sparkles style={{ height: '4rem', width: '4rem', color: '#505050' }} />,
         text: <p>
-            L’Intelligence Artificielle (IA) est plus que jamais d’actualité. Elle est là pour nous aider dans de
-            nombreux domaines, y compris la gestion des réseaux sociaux. Grâce à l’IA, nous pouvons analyser les
+            L&rsquo;Intelligence Artificielle (IA) est plus que jamais d&rsquo;actualité. Elle est là pour nous aider dans de
+            nombreux domaines, y compris la gestion des réseaux sociaux. Grâce à l&rsquo;IA, nous pouvons analyser les
             tendances, comprendre les préférences de notre public et optimiser nos publications. Cependant, il est
-            important de se rappeler que l’âme d’une publication vient de nous, les humains. L’IA est un outil
-            puissant, mais elle ne remplace pas la créativité, l’empathie et l’humanité que nous apportons à nos
-            publications. Ensemble, l’IA et l’humanité peuvent créer une expérience de gestion des réseaux sociaux
+            important de se rappeler que l&rsquo;âme d&rsquo;une publication vient de nous, les humains. L&rsquo;IA est un outil
+            puissant, mais elle ne remplace pas la créativité, l&rsquo;empathie et l&rsquo;humanité que nous apportons à nos
+            publications. Ensemble, l&rsquo;IA et l&rsquo;humanité peuvent créer une expérience de gestion des réseaux sociaux
             véritablement exceptionnelle.
         </p>,
     };
@@ -22,15 +22,15 @@ const Assistant = () => {
             id: 1,
             icon: <Images />,
             text: <p>
-                La génération d’images par IA crée des visuels uniques pour vos posts. À partir de descriptions
-                textuelles ou d’images existantes, elle produit du contenu visuel innovant et attrayant.
+                La génération d&apos;images par IA crée des visuels uniques pour vos posts. À partir de descriptions
+                textuelles ou d&apos;images existantes, elle produit du contenu visuel innovant et attrayant.
             </p>,
         },
         {
             id: 2,
             icon: <PencilLine />,
             text: <p>
-                L’IA est votre alliée pour optimiser vos textes et stimuler votre créativité. Elle reformule vos écrits
+                L&apos;IA est votre alliée pour optimiser vos textes et stimuler votre créativité. Elle reformule vos écrits
                 pour une meilleure clarté et vous propose des idées de posts innovantes.
             </p>,
         },

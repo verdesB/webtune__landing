@@ -1,4 +1,4 @@
-
+"use client"
 import React, {useCallback, useEffect, useMemo, useState} from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import type { Container, SingleOrMultiple } from '@tsparticles/engine';

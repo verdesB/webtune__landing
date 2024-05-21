@@ -8,7 +8,7 @@ const Product = () => (
     <section className="product" id="#product">
         <div className='product__boxLeft'>
             <div className="product__imgSubBox">
-                <Image className="product__logo" src={webtune} alt={''}/>
+                <Image className="product__logo" src={webtune} alt="logo webtune"/>
             </div>
             <div className="product__titleBox">
                 <h2 className="product__title">
