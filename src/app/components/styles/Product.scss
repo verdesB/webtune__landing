@@ -1,0 +1,134 @@
+@use '../../utils/mixin';
+
+.product {
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100%;
+  padding: 3rem 0 0 0;
+  &__boxLeft {
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__imgSubBox {
+    height: 20%;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__logo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding: 1rem;
+  }
+  &__titleBox {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  &__title {
+    text-align: center;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    width: 100%;
+    line-height: 3.5rem;
+  }
+  &__subButton {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+  }
+  &__button {
+    background-color: rgba(75, 217, 219, 0.98);
+    color: #1b202c;
+    border-radius: 0.5rem;
+  }
+  &__boxRight {
+    height: 60vh;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
+  }
+  &__boxRight:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-top: 20%;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to bottom, rgba(122, 122, 122, 0), rgba(0,0,0,0.7));
+
+  }
+  &__capture {
+    width: 100%;
+    height: 100%;
+    border: 5px solid rgba(193, 193, 193, 0.15);
+    position: absolute;
+    right: 50%;
+    bottom:-2rem ;
+    transform: translateX(65%);
+    border-radius: 0.5rem;
+    object-fit: cover;
+    object-position: top  left;
+    box-shadow: rgba(13, 175, 209, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+}
+
+@include mixin.tablet {
+  .product {
+    &__imgSubBox {}
+    &__logo {
+      height: 80%;
+      width: 80%;
+    }
+    &__titleBox {}
+    &__title {}
+    &__subButton {}
+    &__button {}
+    &__boxRight {
+      width: 90%;
+    }
+    &__boxRight:after {}
+    &__capture {
+      width: 100%;
+      transform: translateX(50%);
+    }
+  }
+}
+@include mixin.largeTablet {
+  .product {
+    &__imgSubBox {
+      height: 40%;
+      width: 40%;
+    }
+  }
+}
+@include mixin.desktop {
+  .product {
+    width: 1200px;
+    margin: 0 auto;
+    &__title {
+      font-size: 4rem;
+      line-height: 4.5rem;
+    }
+  }
+}
+
+

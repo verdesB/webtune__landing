@@ -1,0 +1,105 @@
+@use '../../utils/mixin';
+.medias {
+  padding: 3rem 1rem;
+  position: relative;
+  margin: 5rem 0 5rem 0;
+  &__title {
+
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+
+  }
+  &__subTitle {
+    text-align: center;
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+  }
+  &__cardBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    gap: 2rem;
+    padding: 3rem 0;
+
+  }
+  &__card {
+    width: 95%;
+    height: 12rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+    background: #d1d1d1;
+    padding: 1rem;
+
+  }
+  //&__imgBox {
+  //  position: absolute;
+  //  right: -6rem;
+  //  top: 50%;
+  //  transform: translateY(-50%);
+  //  width: 65%;
+  //  height: 65%;
+  //}
+  &__imgBox {
+    //position: absolute;
+    //right: -6rem;
+    //top: 50%;
+    //transform: translateY(-50%);
+    width: 100%;
+    margin: 3rem 0 0 0 ;
+
+  }
+  &__img {
+    box-shadow: rgba(13, 175, 209, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position:left;
+    border-radius: 1rem;
+    border: 5px solid rgba(193, 193, 193, 0.15);
+  }
+}
+@include mixin.tablet {
+  .medias {
+    padding: 3rem 2rem;
+    &__cardBox {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: inherit;
+    }
+    &__card {
+      width: 45%;
+    }
+    &__card:last-child {
+      width: 95%;
+    }
+  }
+
+}
+@include mixin.largeTablet {
+  .medias {
+    padding: 3rem;
+  }
+}
+@include mixin.desktop {
+  .medias {
+    width: 1200px;
+    margin: 5rem auto 5rem auto;
+    &__title {
+      font-size: 4rem;
+    }
+    &__card {
+      width: 30%;
+    }
+    &__card:last-child {
+      width: 30%;
+    }
+  }
+
+}

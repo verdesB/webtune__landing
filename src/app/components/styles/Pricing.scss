@@ -1,0 +1,124 @@
+@use '../../utils/mixin';
+.pricing {
+  //background: rgba(214,214,214,0.75);
+  min-height: 70vh;
+  backdrop-filter: blur(2px);
+  padding: 3rem 1rem;
+  &__title {
+    margin: 5rem 0 0 0 ;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #505050;
+    font-family: "Roboto", sans-serif;
+
+  }
+  &__subTitle {
+    text-align: center;
+    color: #505050;
+    font-family: "Roboto", sans-serif;
+
+  }
+  &__cardsBox {
+    width: 100%;
+    //height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 5rem 0;
+
+  }
+  &__card {
+    width: 100%;
+    height: 35rem;
+    border: 1px solid rgba(214,214,214,0.75);
+    border-radius: 1rem;
+    background: #d1d1d1;
+    padding: 1rem;
+    //box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(48, 48, 48, 0.35) 0px 5px 15px;
+
+  }
+  &__boxText {
+    height: 10%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    color: #505050;
+    border-bottom: 1px solid gray;
+  }
+  &__cardList {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+  &__cardCheck {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  &__cardAction {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__cardButton {
+    width: 100%;
+    background: #1b202c;
+    color: white;
+    border-radius: 0.5rem;
+  }
+
+}
+@include mixin.tablet {
+  .pricing {
+    padding: 3rem 2rem;
+    &__cardsBox {
+      padding:5rem 1rem;
+      box-sizing: border-box;
+      align-items: center;
+    }
+    &__card {
+      width: 80%;
+    }
+  }
+}
+@include mixin.largeTablet {
+  .pricing {
+    padding: 3rem;
+    &__cardsBox {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__card {
+      width: 45%;
+    }
+    &__card:last-child {
+      width: 95%;
+    }
+  }
+}
+@include mixin.desktop {
+  .pricing {
+    &__title {
+      font-size: 4rem;
+    }
+
+    &__cardsBox {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    &__card {
+      width: 30%;
+    }
+    &__card:last-child {
+      width: 30%;
+    }
+  }
+}

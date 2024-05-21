@@ -1,0 +1,150 @@
+@use '../../utils/mixin';
+.assistant {
+  width: 100%;
+  position: relative;
+  //background: rgb(191, 191, 191);
+  //backdrop-filter: blur(2px);
+  padding: 3rem 1rem;
+  box-shadow: rgba(13, 175, 209, 0.25) 0px 20px 30px -10px;
+
+  &__title {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #4e4e4e;
+    font-family: "Roboto", sans-serif;
+
+  }
+  &__subTitle {
+    text-align: center;
+    color: #505050;
+    font-family: "Helvetica Neue", sans-serif;
+  }
+  &__containerCards  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0 5rem 0;
+
+
+  }
+  &__cardLeft {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    background: #d1d1d1;
+  }
+  &__cardBoxImg {
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__cardBoxText {
+    box-sizing: border-box;
+    font-weight: 500;
+    height: 70%;
+    padding: 1.5rem;
+
+  }
+  &__cardMiddle {
+    width: 100%;
+    //height: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__subCard {
+    height: 50%;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    background: #d1d1d1;
+    padding: 1rem;
+
+  }
+  &__subCardBoxIcon {
+    height: 2rem;
+    display: flex;
+    align-items: flex-start;
+
+
+
+  }
+  &__subCardBoxText {
+    height: 80%;
+    padding: 1rem;
+    font-weight: 500;
+
+  }
+  &__cardRight {
+    width: 100%;
+    //height: 40rem;
+    border: 1px solid gray;
+    border-radius: 1rem;
+
+  }
+  &__cardRightImg {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 1rem;
+
+  }
+}
+@include mixin.tablet {
+  .assistant {
+    padding: 3rem 2rem;
+    &__containerCards {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+    }
+    &__cardLeft {
+      width: 100%;
+    }
+    &__cardMiddle {
+      width: 47%;
+    }
+    &__cardRight {
+      width: 47%;
+    }
+  }
+}
+@include mixin.largeTablet {
+  .assistant {
+    padding: 3rem 5rem;
+
+  }
+}
+@include mixin.desktop {
+  .assistant {
+    padding: 3rem;
+    &__title {
+      font-size: 4rem;
+    }
+    &__containerCards {
+      width: 1200px;
+      margin: 2rem auto 5rem auto;
+    }
+    &__cardLeft {
+      width: 30%;
+      height: 100%;
+    }
+    &__cardMiddle {
+      width: 30%;
+    }
+    &__cardRight {
+      width: 30%;
+    }
+    &__subCard {
+      height: 47%;
+    }
+
+
+  }
+}

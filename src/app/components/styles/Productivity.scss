@@ -1,0 +1,90 @@
+@use '../../utils/mixin';
+.productivity {
+  //background: rgb(191, 191, 191);
+  padding:3rem 1rem;
+
+  min-height: 100vh;
+  box-shadow: rgba(13, 175, 209, 0.25) 0px 20px 30px -10px;
+  &__title {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #4e4e4e;
+    font-family: "Helvetica Neue", sans-serif;
+  }
+  &__subTitle {
+    text-align: center;
+    color: #4e4e4e;
+    font-family: "Roboto", sans-serif;
+
+  }
+  &__box {
+
+    margin-top: 2rem;
+
+  }
+  &__imgBox {
+    width: 100%;
+
+    margin: 0 auto;
+
+  }
+  &__img {
+    height: 25rem;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  &__textBox {
+    text-align: start;
+    margin: 2rem auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+
+
+  }
+  &__text {
+    line-height: 2rem;
+    font-size: 1.1rem;
+
+    color: #505050;
+    font-weight: 500;
+
+  }
+}
+@include mixin.tablet {
+  .productivity {
+    padding: 5rem 2rem;
+  }
+}
+@include mixin.largeTablet {
+  .productivity {
+    &__textBox {
+      flex-direction: row;
+    }
+  }
+}
+@include mixin.desktop {
+  .productivity {
+    &__title {
+      font-size: 4rem;
+    }
+
+
+    &__box {
+      width: 1200px;
+      margin: 0 auto 5rem auto ;
+    }
+    &__img {
+      height: 30rem;
+    }
+
+    &__text {
+      padding: 1rem;
+    }
+  }
+
+}
