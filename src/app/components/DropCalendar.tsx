@@ -1,5 +1,5 @@
 import { Eye, FolderArchive, Grab } from 'lucide-react';
-import capture2 from '/public/Capture d’écran_7-5-2024_111442_localhost.jpeg';
+import capture2 from '/public/capturecalendar.jpeg';
 import './styles/DropCalendar.scss';
 import Image from "next/image";
 
