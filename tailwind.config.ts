@@ -83,13 +83,13 @@ module.exports = {
     },
   },
   plugins: [ require('tailwindcss-animate'),
-    function({ addVariant, e }) {
-      addVariant('collapsed', ({ modifySelectors, separator }) => {
-        modifySelectors(({ className }) => {
-          return `.${e(`collapsed${separator}${className}`)}[data-collapsed='true']`
-        })
-      })
-    },
+    // function({ addVariant, e }: { addVariant: (arg: any) => void, e: (arg: any) => string }) {
+    //   addVariant('collapsed', ({ modifySelectors, separator }) => {
+    //     modifySelectors(({ className }) => {
+    //       return `.${e(`collapsed${separator}${className}`)}[data-collapsed='true']`
+    //     })
+    //   })
+    // },
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
           {
