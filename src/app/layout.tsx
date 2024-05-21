@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Head from "next/head";
 
 
 
@@ -20,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
       <html lang="fr">
-
+      <Head>
+          <link rel="shortcut icon" href="/public/favicon.ico" />
+      </Head>
       <body className={inter.className}>{children}</body>
       </html>
   );
