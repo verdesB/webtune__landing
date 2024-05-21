@@ -417,7 +417,7 @@ export const SparklesCore = React.memo((props: ParticlesProps) => {
             },
         },
         detectRetina: true,
-    }), [background, speed, particleColor, particleDensity, minSize, maxSize])
+    }), [])
 
     return (
         <motion.div animate={controls} className={cn('opacity-0', className)}>
