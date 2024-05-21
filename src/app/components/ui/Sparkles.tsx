@@ -106,7 +106,7 @@ export const SparklesCore = React.memo((props: ParticlesProps) => {
                 },
                 enable: false,
                 maxSpeed: 50,
-                mode: 'bounce',
+                mode: "bounce",
                 overlap: {
                     enable: true,
                     retries: 0,
