@@ -864,7 +864,7 @@ export const SparklesCore = React.memo((props: ParticlesProps) => {
                                 speed: 1,
                             },
                         },
-                        detectRetina: true,
+                        detectRetina: false,
                     }}
                 />
             )}
