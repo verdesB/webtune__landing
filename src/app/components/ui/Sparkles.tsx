@@ -433,3 +433,4 @@ export const SparklesCore = React.memo((props: ParticlesProps) => {
     );
 
 });
+SparklesCore.displayName = 'SparklesCore'; // Ajoutez cette ligne
