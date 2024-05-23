@@ -508,7 +508,7 @@ export const SparklesCore = React.memo((props: ParticlesProps) => {
                             zIndex: 1,
                         },
 
-                        fpsLimit: 30,
+                        fpsLimit: 60,
                         interactivity: {
                             events: {
                                 onClick: {
