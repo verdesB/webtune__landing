@@ -27,7 +27,7 @@
   &__imgBox {
     width: 100%;
 
-    margin: 0 auto;
+    margin: 0 auto 5rem auto;
 
   }
   &__img {
@@ -46,10 +46,18 @@
 
 
   }
+  &__card {
+    border: 1px solid rgba(214,214,214,0.75);
+    background: #d1d1d1;
+    width: 100%;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: rgba(48, 48, 48, 0.35) 0px 5px 15px;
+  }
   &__text {
     line-height: 2rem;
     font-size: 1.1rem;
-
+    text-align: start;
     color: #505050;
     font-weight: 500;
 

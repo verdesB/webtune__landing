@@ -12,7 +12,7 @@ const Pricing = () => {
             checks: 6,
             text: <div className="pricing__boxText">
                 <p>Gratuit</p>
-                <p>0€ / Mois</p>
+                <p>/ Mois</p>
             </div>,
         },
         {
@@ -20,7 +20,7 @@ const Pricing = () => {
             checks: 6,
             text: <div className="pricing__boxText">
                 <p>Plan Unique</p>
-                <p>9.99€ / Mois</p>
+                <p>/ Mois</p>
             </div>,
         },
         {
@@ -28,7 +28,7 @@ const Pricing = () => {
             checks: 6,
             text: <div className="pricing__boxText">
                 <p>Plan entreprise</p>
-                <p>16.99€ / Mois</p>
+                <p>/ Mois</p>
             </div>,
         },
     ];

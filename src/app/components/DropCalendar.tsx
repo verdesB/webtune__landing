@@ -9,12 +9,12 @@ const DropCalendar = () => {
         {
             id: 1,
             icon: <Eye className="dropCalendar__icon"/>,
-            text: 'Un calendrier éditorial permettant d’avoir une vue d’ensemble sur les publications posté et programmé.',
+            text: 'Optimisez votre stratégie de contenu avec notre fonctionnalité de calendrier éditorial. Obtenez une vue d’ensemble claire de vos publications passées et à venir, le tout en un seul endroit.',
         },
         {
             id: 2,
             icon: <Grab className="dropCalendar__icon"/>,
-            text: 'Un calendrier éditorial permettant d’avoir une vue d’ensemble sur les publications posté et programmé.',
+            text: 'Découvrez notre calendrier éditorial interactif en glisser-déposer. Modifiez facilement les dates de publication ou programmez des posts en brouillon. Une gestion de contenu simplifiée à portée de main.',
         },
         {
             id: 3,

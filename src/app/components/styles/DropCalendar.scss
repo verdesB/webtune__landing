@@ -25,17 +25,20 @@
     border: 5px solid rgba(193, 193, 193, 0.15);
     border-radius: 1rem;
     box-shadow: rgba(13, 175, 209, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-bottom: 3rem;
   }
   &__boxCard {
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    gap: 1rem;
+    gap: 2rem;
     margin: 0 auto;
 
   }
   &__card {
+    //height: auto;
     box-sizing: border-box;
     width: 100%;
     display: flex;
@@ -44,25 +47,41 @@
     border: 1px solid white;
     border-radius: 1rem;
     background-color: #d1d1d1;
+    padding: 2rem;
 
   }
   &__icon {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     color: #4e4e4e;
   }
   &__cardBoxTop {
     height: 30%;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+  }
+  &__cardBoxTop:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #d1d1d1);
   }
   &__cardBoxBottom {
+    box-sizing: border-box;
     height: 70%;
     padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    color: #4e4e4e;
+
   }
 }
 .dropCalendar:after {
@@ -78,22 +97,24 @@
   .dropCalendar {
     padding: 3rem 2rem 5rem 2rem;
     &__card {
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
+      height: 20rem;
     }
     &__boxCard {
       flex-direction: row;
+      flex-wrap: wrap;
     }
     &__icon {
-      height: 3rem;
-      width: 3rem;
+      height: 5rem;
+      width: 5rem;
     }
     &__cardBoxTop {
-      height: 20%;
+      height: 30%;
 
     }
     &__cardBoxBottom {
-      height: 80%;
+      height: 70%;
 
     }
   }
@@ -105,12 +126,16 @@
   .dropCalendar {
     padding: 3rem ;
     &__card {
-      height: 15rem;
+      height: 22rem;
+      width: 47%;
+    }
+    &__card:last-child {
+      width: 100%;
     }
 
     &__icon {
-      width: 4rem;
-      height: 4rem;
+      width: 5rem;
+      height: 5rem;
     }
     &__cardBoxTop {
       height: 40%;
@@ -128,6 +153,14 @@
     margin: 5rem auto 5rem auto;
     &__title {
       font-size: 4rem;
+    }
+    &__card {
+      width: 30%;
+      height: 25rem;
+      padding: 1rem;
+    }
+    &__card:last-child {
+      width: 30%;
     }
   }
   .dropCalendar:after {

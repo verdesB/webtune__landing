@@ -15,10 +15,16 @@ const Productivity = () => {
                     <Image className="productivity__img" src={products} alt="" />
                 </div>
                 <div className="productivity__textBox">
-                    <p className="productivity__text">
-                        L’objectif principal de notre application est de centraliser les différents réseaux sociaux, minimisant ainsi les manipulations nécessaires pour l’utilisateur sur chaque plateforme.</p>
-                    <p className="productivity__text">En regroupant tout en un seul endroit, nous permettons à l’utilisateur de rester concentré sur le contenu sans se perdre dans les transitions entre différentes applications.</p>
-
+                    <div className="productivity__card">
+                        <p className="productivity__text">
+                            Découvrez la simplicité de la gestion des réseaux sociaux avec Webtune. Plus besoin de jongler entre différentes plateformes, notre solution vous permet
+                            de gérer tous vos réseaux sociaux en un seul endroit. Avec une interface intuitive et
+                            organisée, vous pouvez facilement suivre, analyser et interagir avec votre public.
+                            Simplifiez votre vie numérique et augmentez votre productivité Webtune.</p>
+                    </div>
+                    <div className="productivity__card">
+                        <p className="productivity__text">Optimisez votre temps sur les réseaux sociaux avec notre application web tout-en-un. Gérez tous vos comptes de manière centralisée et organisée. Que vous soyez un professionnel du marketing ou un utilisateur quotidien, naviguez efficacement dans le monde des médias sociaux. Essayez notre application et découvrez une nouvelle façon de gérer vos réseaux sociaux.</p>
+                   </div>
                 </div>
             </div>
         </section>
