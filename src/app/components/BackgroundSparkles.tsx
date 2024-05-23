@@ -3,7 +3,7 @@ import React from 'react';
 import { SparklesCore } from './ui/Sparkles';
 
 const SparklesPreview = () => (
-    <div className="h-[850vh] absolute w-full bg-[#1b202c] flex flex-col items-center justify-center overflow-hidden rounded-md z-[-1]">
+    <div className="h-[1000vh] absolute w-full bg-[#1b202c] flex flex-col items-center justify-center overflow-hidden rounded-md z-[-1]">
         <div className="w-full absolute inset-0 h-auto">
             <SparklesCore
                 id="tsparticlesfullpage"
